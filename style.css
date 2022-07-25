@@ -697,8 +697,11 @@ body {
 .logo,
 .menu {
   display: flex;
-  justify-content: center;
   padding: 10px 0;
+}
+
+.logo {
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
