@@ -1,5 +1,3 @@
-//slider "SWIPER" init
-
 //modal show by scroll
 
 function modalShow() {

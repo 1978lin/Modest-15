@@ -146,33 +146,57 @@ body {
     cursor: pointer;
   }
 }
-// // **********SLIDER BLOCK************************
+// **********SLIDER BLOCK************************
 
 .slider {
   height: 660px;
   background: url(images/slider.png) right no-repeat;
   background-size: cover;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 
-  .slider_content {
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
     color: #fff;
-    max-width: 655px;
+    opacity: 0.8;
+    font-size: 50px;
+  }
+  .swiper-pagination {
+    text-align: end;
+    padding-bottom: 25px;
 
-    .slider_big_btn {
-      width: 125px;
-      margin: 10px 10px 0 0;
+    .swiper-pagination-bullet {
+      width: 13px;
+      height: 13px;
+      background-color: transparent;
+      border: 2px solid #fff;
+      opacity: 0.8;
     }
-
-    h1,
-    p {
-      margin-bottom: 32px;
-    }
-    p {
-      color: #ccd0d7;
+    .swiper-pagination-bullet-active {
+      background-color: #fff;
+      opacity: 1;
     }
   }
+
+  .swiper-slide {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .slider_big_btn {
+    width: 125px;
+    margin: 10px 10px 0 0;
+  }
+
+  h1,
+  p {
+    margin-bottom: 32px;
+  }
+  p {
+    color: #ccd0d7;
+  }
 }
+
 // // **********WE ARE MODEST BLOCK*****************
 
 .modest_main {
