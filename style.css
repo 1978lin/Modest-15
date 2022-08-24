@@ -588,9 +588,18 @@ body {
   color: #dcdfe1;
 }
 
+.modal_base {
+  position: relative;
+}
+
+.stay_map {
+  margin-bottom: 60px;
+}
+
 .stay_lower_content {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 105px;
 }
 
 .stay_title {
@@ -611,6 +620,72 @@ body {
 .stay_text p {
   line-height: 26px;
   color: #8d8f92;
+}
+
+.send_message {
+  position: absolute;
+  top: -190px;
+  left: 0;
+  padding: 30px;
+  border: 0.5px solid lightgrey;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.user_data {
+  display: flex;
+}
+
+.btn_send {
+  background-color: #23b7a4;
+  color: #fff;
+  width: 150px;
+}
+
+.your_message textarea {
+  margin-bottom: 30px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.your_message textarea,
+#your_name,
+#your_email {
+  background-color: #eaeef1;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 23px;
+  padding: 10px;
+  color: grey;
+  outline: none;
+  border: none;
+}
+
+.user_name label,
+.user_email label {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: bold;
+  display: block;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  color: #8d8f92;
+}
+
+.user_name input,
+.user_email input {
+  height: 44px;
+  width: 240px;
+  margin-bottom: 30px;
+}
+
+.user_name input {
+  margin-right: 15px;
+}
+
+.modal_hide {
+  display: none;
 }
 
 .footer {
