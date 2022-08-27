@@ -149,11 +149,28 @@ body {
 // **********SLIDER BLOCK************************
 
 .slider {
-  height: 660px;
-  background: url(images/slider.png) right no-repeat;
+  // height: 660px;
+  // background: url(images/slider.png) right no-repeat;
+  background-color: rgb(214, 214, 214);
   background-size: cover;
-  // display: flex;
-  // align-items: center;
+
+  .slider_block {
+    position: relative;
+    .slider_content {
+      position: absolute;
+      top: 225px;
+      z-index: 5;
+      max-width: 654px;
+      color: #fff;
+      h1,
+      p {
+        margin-bottom: 32px;
+      }
+      p {
+        color: #ccd0d7;
+      }
+    }
+  }
 
   .swiper-button-prev:after,
   .swiper-button-next:after {
@@ -181,19 +198,14 @@ body {
   .swiper-slide {
     max-width: 100%;
     text-align: center;
+    img {
+      min-width: 100%;
+    }
   }
 
   .slider_big_btn {
     width: 125px;
     margin: 10px 10px 0 0;
-  }
-
-  h1,
-  p {
-    margin-bottom: 32px;
-  }
-  p {
-    color: #ccd0d7;
   }
 }
 

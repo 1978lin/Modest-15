@@ -49,29 +49,34 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="/images/slide_1.jpg"></div>
-                                <div class="swiper-slide"><img src="/images/slide_2.jpg"></div>
-                                <div class="swiper-slide"><img src="/images/slide_3.jpg"></div>
+                        <div class="slider_block">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="/images/slide_1.jpg"></div>
+                                    <div class="swiper-slide"><img src="/images/slide_2.jpg"></div>
+                                    <div class="swiper-slide"><img src="/images/slide_3.jpg"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <!-- <div class="swiper-button-prev"></div> -->
+                                <!-- <div class="swiper-button-next"></div> -->
                             </div>
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            <div class="slider_content">
+                                <div class="slider_title title">
+                                    <h1>Welcome to our marketplace</h1>
+                                </div>
+                                <div class="slider_text text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus,
+                                        tristique
+                                        ndolor
+                                        non, ornare sagittis dolor. Nulla vestibulu lacus...</p>
+                                </div>
+                                <div class="slider_btn">
+                                    <a class="big_btn slider_big_btn">View more</a>
+                                    <a class="big_btn slider_big_btn">Video tour</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- <div class="slider_title title">
-                                <h1>Welcome to our marketplace</h1>
-                            </div>
-                            <div class="slider_text text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique
-                                    ndolor
-                                    non, ornare sagittis dolor. Nulla vestibulu lacus...</p>
-                            </div>
-                            <div class="slider_btn">
-                                <a class="big_btn slider_big_btn">View more</a>
-                                <a class="big_btn slider_big_btn">Video tour</a>
-                            </div> -->
                 </div>
 
             </div>
@@ -629,15 +634,13 @@
         © Copyright 2014 by PSD Booster. All Rights Reserved.
     </footer>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
-
     <script type="module">
-        import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js';
+        import Swiper from "https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js";
 
         const swiper = new Swiper(".swiper", {
             loop: true,
             speed: 1500,
-            // slideToClickedSlide: true,
+
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -652,7 +655,6 @@
                 delay: 1000,
                 disableOnInteraction: false,
             },
-
         });
     </script>
     <script src="script.js"></script>
