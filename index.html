@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href='/node_modules/swiper/swiper-bundle.css' />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Homework_13/14 Modest Flex
     </title>
 </head>
@@ -48,38 +48,34 @@
         <section class="slider">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="slider_block">
-                            <div class="swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><img src="/images/slide_1.jpg"></div>
-                                    <div class="swiper-slide"><img src="/images/slide_2.jpg"></div>
-                                    <div class="swiper-slide"><img src="/images/slide_3.jpg"></div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                                <!-- <div class="swiper-button-prev"></div> -->
-                                <!-- <div class="swiper-button-next"></div> -->
+                    <div class="slider_block">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="/images/slide_1.jpg"></div>
+                                <div class="swiper-slide"><img src="/images/slide_2.jpg"></div>
+                                <div class="swiper-slide"><img src="/images/slide_3.jpg"></div>
                             </div>
-                            <div class="slider_content">
-                                <div class="slider_title title">
-                                    <h1>Welcome to our marketplace</h1>
-                                </div>
-                                <div class="slider_text text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus,
-                                        tristique
-                                        ndolor
-                                        non, ornare sagittis dolor. Nulla vestibulu lacus...</p>
-                                </div>
-                                <div class="slider_btn">
-                                    <a class="big_btn slider_big_btn">View more</a>
-                                    <a class="big_btn slider_big_btn">Video tour</a>
-                                </div>
+                            <div class="swiper-pagination"></div>
+                            <!-- <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div> -->
+                        </div>
+                        <div class="slider_content">
+                            <div class="slider_title title">
+                                <h1>Welcome to our marketplace</h1>
+                            </div>
+                            <div class="slider_text text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus,
+                                    tristique
+                                    ndolor
+                                    non, ornare sagittis dolor. Nulla vestibulu lacus...</p>
+                            </div>
+                            <div class="slider_btn">
+                                <a class="big_btn slider_big_btn">View more</a>
+                                <a class="big_btn slider_big_btn">Video tour</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-            </div>
         </section>
         <section class="modest">
             <div class="container">
@@ -582,11 +578,11 @@
             <div class="container_wide">
                 <div class="row stay_map">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <!-- <iframe
+                        <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51184.020457200575!2d30.49391384330832!3d50.4774328506671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce127f8e9145%3A0x1b50fdc19a1eac0!2z0YPQuy4g0JzQtdC20LjQs9C-0YDRgdC60LDRjywgNTYsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1661159733357!5m2!1sru!2sua"
                             width="100%" height="345" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
-                        </iframe> -->
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -634,29 +630,8 @@
         © Copyright 2014 by PSD Booster. All Rights Reserved.
     </footer>
 
-    <script type="module">
-        import Swiper from "https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js";
+    <script src="/node_modules/swiper/swiper-bundle.js"></script>
 
-        const swiper = new Swiper(".swiper", {
-            loop: true,
-            speed: 1500,
-
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-
-            autoplay: {
-                delay: 1000,
-                disableOnInteraction: false,
-            },
-        });
-    </script>
     <script src="script.js"></script>
 
 </body>

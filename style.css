@@ -184,11 +184,11 @@ body {
   opacity: 1;
 }
 .slider .swiper-slide {
-  max-width: 100%;
   text-align: center;
 }
 .slider .swiper-slide img {
   min-width: 100%;
+  max-height: 660px;
 }
 .slider .slider_big_btn {
   width: 125px;
